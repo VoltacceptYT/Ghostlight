@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 import { useSearchParams } from "next/navigation"
 import { GhostShellCard } from "./ghost-shell-card"
 import { Skeleton } from "./ui/skeleton"
-import { Ghost } from "lucide-react"
+import Image from "next/image"
 
 interface GhostShell {
   hash: number
@@ -56,7 +56,7 @@ export function GhostShellGrid() {
   if (ghostShells.length === 0) {
     return (
       <div className="py-20 flex flex-col items-center justify-center text-center space-y-4">
-        <Ghost className="h-16 w-16 text-muted-foreground" aria-hidden="true" />
+        <Image src="/ghost.svg" alt="" width={64} height={64} className="opacity-60" aria-hidden />
         <div>
           <p className="text-2xl md:text-3xl font-semibold">Eyes Up Guardian</p>
           <p className="text-sm md:text-base text-muted-foreground">There's Always More Ghosts to Be Found</p>
