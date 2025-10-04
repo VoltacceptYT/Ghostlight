@@ -1,4 +1,4 @@
-import { Sparkles } from "lucide-react"
+import { Image } from "next/image"
 import { SearchBar } from "@/components/search-bar"
 import { GhostShellGrid } from "@/components/ghost-shell-grid"
 import { Suspense } from "react"
@@ -11,7 +11,7 @@ export default function HomePage() {
       <header className="border-b border-border/50 sticky top-0 bg-background/80 backdrop-blur-sm z-10">
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Sparkles className="h-6 w-6 text-primary" />
+            <Image src="logo.svg" alt="VoltaTECH Logo" aria-hidden className="h-6 w-6 text-primary" />
             <span className="text-lg font-semibold tracking-tight">VoltaTECH</span>
           </div>
           <div className="flex items-center gap-2">
