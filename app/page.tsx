@@ -1,4 +1,4 @@
-import { Image } from "next/image"
+import Image from "next/image"
 import { SearchBar } from "@/components/search-bar"
 import { GhostShellGrid } from "@/components/ghost-shell-grid"
 import { Suspense } from "react"

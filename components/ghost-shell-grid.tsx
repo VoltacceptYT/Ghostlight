@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 import { useSearchParams } from "next/navigation"
 import { GhostShellCard } from "./ghost-shell-card"
 import { Skeleton } from "./ui/skeleton"
-import { Image } from "next/image"
+import Image from "next/image"
 
 interface GhostShell {
   hash: number
