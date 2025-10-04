@@ -38,8 +38,9 @@ export function GhostShellCard({ ghostShell }: { ghostShell: GhostShell }) {
             <Image
               src={`https://www.bungie.net${ghostShell.icon}`}
               alt={ghostShell.name}
-              fill
-              className="object-contain p-2"
+              width={128}
+              height={128}
+              className="object-contain p-2 max-w-[128px] max-h-[128px]"
               onError={() => setImageError(true)}
             />
           ) : (
@@ -66,8 +67,9 @@ export function GhostShellCard({ ghostShell }: { ghostShell: GhostShell }) {
                   <Image
                     src={`https://www.bungie.net${ghostShell.icon}`}
                     alt={ghostShell.name}
-                    fill
-                    className="object-contain p-3"
+                    width={128}
+                    height={128}
+                    className="object-contain p-3 max-w-[128px] max-h-[128px]"
                     onError={() => setImageError(true)}
                   />
                 ) : (
