@@ -1,10 +1,23 @@
 import Image from "next/image"
 import { SearchBar } from "@/components/search-bar"
 import { GhostShellGrid } from "@/components/ghost-shell-grid"
-import { Suspense } from "react"
+import { Suspense, useEffect, useState } from "react"
 import { ThemeToggle } from "@/components/theme-toggle"
 
-export default function HomePage() {
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowButton(window.scrollY > 200);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
@@ -55,6 +68,15 @@ export default function HomePage() {
           </p>
         </div>
       </footer>
+      {showButton && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-8 right-8 z-50 bg-gray-800 text-white rounded-full p-3 shadow-lg hover:bg-gray-700 transition-colors"
+          aria-label="Return to top"
+        >
+          ↑ Top
+        </button>
+      )}
     </div>
   )
 }
