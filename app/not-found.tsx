@@ -7,7 +7,7 @@ export default function NotFound() {
       <Image src="confused_ghost.webp" alt="Confused Ghost" width={128} height={128} aria-hidden className="max-w-[96px] sm:max-w-[128px] max-h-[96px] sm:max-h-[128px]" />
       <div>
         <p className="text-xl sm:text-2xl md:text-3xl font-semibold">Guardian?</p>
-        <p className="text-xs sm:text-sm md:text-base text-muted-foreground">Whoops, the page couldn't be found</p>
+        <p className="text-xs sm:text-sm md:text-base text-muted-foreground">Whoops, you've hit a dead end!</p>
       </div>
       <Link href="/" className="inline-block mt-4 px-6 py-2 rounded-md bg-primary text-primary-foreground font-medium shadow hover:bg-primary/90 transition-colors">Return Home</Link>
     </div>

@@ -3,6 +3,7 @@ import { SearchBar } from "@/components/search-bar"
 import { GhostShellGrid } from "@/components/ghost-shell-grid"
 import { Suspense } from "react"
 import { ThemeToggle } from "@/components/theme-toggle"
+import { ReturnToTopButton } from "@/components/return-to-top-button"
 
 export default function HomePage() {
   return (
@@ -55,6 +56,8 @@ export default function HomePage() {
           </p>
         </div>
       </footer>
+  {/* Return to Top Button */}
+  <ReturnToTopButton />
     </div>
   )
 }
