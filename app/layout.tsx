@@ -14,7 +14,10 @@ export const metadata: Metadata = {
   icons: {
     icon: "favicon.ico",
   },
-  manifest: "manifest.json"
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#fafafa" }, // light theme background
+    { media: "(prefers-color-scheme: dark)", color: "#18181b" },  // dark theme background
+  ],
 }
 
 export default function RootLayout({
