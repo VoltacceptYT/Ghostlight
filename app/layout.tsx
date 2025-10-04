@@ -29,10 +29,12 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`font-sans antialiased ${GeistSans.variable} ${GeistMono.variable}`}>
         <ThemeProvider>
-          <div className="min-h-screen w-full flex justify-center bg-background">
-            <div className="w-full max-w-screen-xl px-2 sm:px-4 md:px-8 lg:px-16 xl:px-24 py-4 flex flex-col">
-              {/* Google Login Button and User Info */}
-              {typeof window !== 'undefined' && require('../components/GoogleLogin').default()}
+          <div
+            className="min-h-screen w-full flex justify-center bg-background"
+          >
+            <div
+              className="w-full max-w-screen-xl px-2 sm:px-4 md:px-8 lg:px-16 xl:px-24 py-4 flex flex-col"
+            >
               {/* Responsive container: mobile (default), tablet (md), PC (lg+) */}
               <Suspense fallback={null}>{children}</Suspense>
             </div>
