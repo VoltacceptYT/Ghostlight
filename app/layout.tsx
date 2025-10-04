@@ -7,8 +7,8 @@ import { Suspense } from "react"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "VoltaTECH - Destiny 2 Item Manager",
-  description: "Modern minimalistic Destiny 2 item manager for managing your inventory and vault",
+  title: "VoltaTECH - Ghostlight",
+  description: "Ghostlight by VoltaTECH is a comprehensive, searchable database of Destiny 2 Ghost Shells. Designed for enthusiasts and developers alike, it offers fast lookup, rich metadata, and stunning visuals.",
   generator: "v0.app",
 }
 

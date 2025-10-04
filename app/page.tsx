@@ -13,7 +13,7 @@ export default function HomePage() {
             <Sparkles className="h-6 w-6 text-primary" />
             <span className="text-lg font-semibold tracking-tight">VoltaTECH</span>
           </div>
-          <p className="text-sm text-muted-foreground hidden sm:block">Ghost Shell Database</p>
+          <p className="text-sm text-muted-foreground hidden sm:block">Ghostlight</p>
         </div>
       </header>
 
@@ -23,7 +23,7 @@ export default function HomePage() {
           {/* Hero Section */}
           <div className="text-center space-y-6 max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-balance">
-              Destiny 2 Ghost Shell Database
+              Ghostlight by VoltaTECH
             </h1>
             <p className="text-lg text-muted-foreground text-pretty leading-relaxed">
               Browse and search through every Ghost Shell in Destiny 2. Find your perfect companion.
