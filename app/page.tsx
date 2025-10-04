@@ -18,6 +18,7 @@ import { ThemeToggle } from "@/components/theme-toggle"
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  export default function HomePage() {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
