@@ -135,12 +135,11 @@
 }
 
 .logo-theme-invert {
-  filter: invert(0);
-  transition: filter 0.3s;
+  filter: invert(1);
 }
 
 .dark .logo-theme-invert {
-  filter: invert(1) hue-rotate(180deg) contrast(1.2) brightness(0.9);
+  filter: invert(0);
 }
 
 @layer base {
