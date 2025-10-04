@@ -14,7 +14,7 @@ export default function HomePage() {
             <span className="text-lg font-semibold tracking-tight">VoltaTECH</span>
           </div>
           <div className="flex items-center gap-2">
-            <p className="text-sm text-muted-foreground hidden sm:block">LoyalLight Database</p>
+            <p className="text-sm text-muted-foreground hidden sm:block">LoyalLight</p>
             <ThemeToggle />
           </div>
         </div>
@@ -26,7 +26,7 @@ export default function HomePage() {
           {/* Hero Section */}
           <div className="text-center space-y-6 max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-balance">
-              LoyalLight Database by VoltaTECH
+              LoyalLight by VoltaTECH
             </h1>
             <p className="text-lg text-muted-foreground text-pretty leading-relaxed">
               Browse and search through every Ghost Shell in Destiny 2. Find your perfect companion.
