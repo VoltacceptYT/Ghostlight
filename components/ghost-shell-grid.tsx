@@ -56,7 +56,7 @@ export function GhostShellGrid() {
   if (ghostShells.length === 0) {
     return (
       <div className="py-12 sm:py-20 flex flex-col items-center justify-center text-center space-y-4 px-2 sm:px-0">
-        <Image src="happy_ghost.webp" alt="404 Ghost Not Found" width={128} height={128} aria-hidden className="max-w-[96px] sm:max-w-[128px] max-h-[96px] sm:max-h-[128px]" />
+        <Image src="excited_ghost.webp" alt="Excited Ghost" width={128} height={128} aria-hidden className="max-w-[96px] sm:max-w-[128px] max-h-[96px] sm:max-h-[128px]" />
         <div>
           <p className="text-xl sm:text-2xl md:text-3xl font-semibold">Eyes Up Guardian</p>
           <p className="text-xs sm:text-sm md:text-base text-muted-foreground">There's Always More Ghosts to Be Found</p>
