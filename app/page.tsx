@@ -1,34 +1,17 @@
-"use client";
-
 import Image from "next/image"
 import { SearchBar } from "@/components/search-bar"
 import { GhostShellGrid } from "@/components/ghost-shell-grid"
-import { Suspense, useEffect, useState } from "react"
+import { Suspense } from "react"
 import { ThemeToggle } from "@/components/theme-toggle"
 
-
-const [showButton, setShowButton] = useState(false);
-
-useEffect(() => {
-  const handleScroll = () => {
-    setShowButton(window.scrollY > 200);
-  };
-  window.addEventListener("scroll", handleScroll);
-  return () => window.removeEventListener("scroll", handleScroll);
-}, []);
-
-const scrollToTop = () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-};
-
-  export default function HomePage() {
+export default function HomePage() {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="border-b border-border/50 sticky top-0 bg-background/80 backdrop-blur-sm z-10">
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-              <Image src="/favicon.ico" alt="Logo" width={32} height={32} className="h-8 w-8 sm:h-10 sm:w-10 logo-theme-invert" />
+            <Image src="voltatech_logo.png" alt="VoltaTECH Logo" width={32} height={32} className="h-8 w-8 sm:h-10 sm:w-10" />
             <span className="text-lg font-semibold tracking-tight">VoltaTECH</span>
           </div>
           <div className="flex items-center gap-2">
@@ -72,17 +55,6 @@ const scrollToTop = () => {
           </p>
         </div>
       </footer>
-      {showButton && (
-        <button
-          onClick={scrollToTop}
-          className="fixed bottom-8 right-8 z-50 bg-gray-800 text-white rounded-full p-3 shadow-lg hover:bg-gray-700 transition-colors"
-          aria-label="Return to top"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
-          </svg>
-        </button>
-      )}
     </div>
   )
 }
