@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import { useSearchParams } from "next/navigation"
 import { GhostShellCard } from "./ghost-shell-card"
 import { Skeleton } from "./ui/skeleton"
+import { Ghost } from "lucide-react"
 
 interface GhostShell {
   hash: number
@@ -54,10 +55,12 @@ export function GhostShellGrid() {
 
   if (ghostShells.length === 0) {
     return (
-      <div className="text-center py-16">
-        <p className="text-xl text-muted-foreground">
-          {search ? `No Ghost Shells found for "${search}"` : "No Ghost Shells found"}
-        </p>
+      <div className="py-20 flex flex-col items-center justify-center text-center space-y-4">
+        <Ghost className="h-16 w-16 text-muted-foreground" aria-hidden="true" />
+        <div>
+          <p className="text-2xl md:text-3xl font-semibold">Eyes Up Guardian</p>
+          <p className="text-sm md:text-base text-muted-foreground">There's Always More Ghosts to Be Found</p>
+        </div>
       </div>
     )
   }
