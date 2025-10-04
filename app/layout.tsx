@@ -1,7 +1,4 @@
 import type React from "react"
-import dynamic from "next/dynamic"
-// Dynamically import GoogleLogin as a client component
-const GoogleLogin = dynamic(() => import("@/components/GoogleLogin"), { ssr: false })
 import type { Metadata } from "next"
 import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
@@ -35,7 +32,7 @@ export default function RootLayout({
           <div className="min-h-screen w-full flex justify-center bg-background">
             <div className="w-full max-w-screen-xl px-2 sm:px-4 md:px-8 lg:px-16 xl:px-24 py-4 flex flex-col">
               {/* Google Login Button and User Info */}
-              <GoogleLogin />
+              {typeof window !== 'undefined' && require('../components/GoogleLogin').default()}
               {/* Responsive container: mobile (default), tablet (md), PC (lg+) */}
               <Suspense fallback={null}>{children}</Suspense>
             </div>
