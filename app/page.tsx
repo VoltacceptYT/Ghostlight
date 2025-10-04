@@ -74,7 +74,9 @@ import { ThemeToggle } from "@/components/theme-toggle"
           className="fixed bottom-8 right-8 z-50 bg-gray-800 text-white rounded-full p-3 shadow-lg hover:bg-gray-700 transition-colors"
           aria-label="Return to top"
         >
-          ↑ Top
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
+          </svg>
         </button>
       )}
     </div>
