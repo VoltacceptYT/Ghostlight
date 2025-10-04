@@ -115,6 +115,22 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  border-radius: 8px;
+  border: 2px solid var(--background);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+}
+::-webkit-scrollbar-corner {
+  background: var(--background);
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
