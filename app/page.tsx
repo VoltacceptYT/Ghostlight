@@ -2,6 +2,7 @@ import { Sparkles } from "lucide-react"
 import { SearchBar } from "@/components/search-bar"
 import { GhostShellGrid } from "@/components/ghost-shell-grid"
 import { Suspense } from "react"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 export default function HomePage() {
   return (
@@ -13,7 +14,10 @@ export default function HomePage() {
             <Sparkles className="h-6 w-6 text-primary" />
             <span className="text-lg font-semibold tracking-tight">VoltaTECH</span>
           </div>
-          <p className="text-sm text-muted-foreground hidden sm:block">Ghostlight</p>
+          <div className="flex items-center gap-2">
+            <p className="text-sm text-muted-foreground hidden sm:block">Ghostlight</p>
+            <ThemeToggle />
+          </div>
         </div>
       </header>
 
