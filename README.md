@@ -1,7 +1,7 @@
-# Ghostlight by VoltaTECH  
+# LoyalLight Database by VoltaTECH  
 *A sleek, high-performance Destiny 2 Ghost Shell database powered by Next.js and the Bungie API.*
 
-Ghostlight is an open-source archive of Destiny 2 Ghost Shells—designed for collectors, developers, and lore enthusiasts. Built by VoltaTECH, it offers fast, intuitive access to every shell in the game, with rich metadata, and a modern responsive UI.
+LoyalLight Database is an open-source archive of Destiny 2 Ghost Shells—designed for collectors, developers, and lore enthusiasts. Built by VoltaTECH, it offers fast, intuitive access to every shell in the game, with rich metadata, and a modern responsive UI.
 
 ## Features
 

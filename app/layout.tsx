@@ -8,8 +8,8 @@ import { ThemeProvider } from "@/components/theme-provider"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "VoltaTECH - Ghostlight",
-  description: "Ghostlight by VoltaTECH is a comprehensive, searchable database of Destiny 2 Ghost Shells. Designed for enthusiasts and developers alike, it offers fast lookup, rich metadata, and stunning visuals.",
+  title: "VoltaTECH - LoyalLight Database",
+  description: "LoyalLight Database by VoltaTECH is a comprehensive, searchable database of Destiny 2 Ghost Shells. Designed for enthusiasts and developers alike, it offers fast lookup, rich metadata, and stunning visuals.",
   generator: "v0.app",
   icons: {
     icon: "favicon.ico",
