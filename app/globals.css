@@ -119,22 +119,35 @@
   width: 12px;
   background: var(--background);
 }
+
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, var(--primary), var(--accent));
+  background-color: var(--primary);
   border-radius: 8px;
   border: 2px solid var(--background);
 }
+
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  background-color: var(--primary);
 }
+
 ::-webkit-scrollbar-corner {
   background: var(--background);
+}
+
+.logo-theme-invert {
+  filter: invert(0);
+  transition: filter 0.3s;
+}
+
+.dark .logo-theme-invert {
+  filter: invert(1) hue-rotate(180deg) contrast(1.2) brightness(0.9);
 }
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
