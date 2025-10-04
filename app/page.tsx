@@ -1,22 +1,25 @@
+"use client";
+
 import Image from "next/image"
 import { SearchBar } from "@/components/search-bar"
 import { GhostShellGrid } from "@/components/ghost-shell-grid"
 import { Suspense, useEffect, useState } from "react"
 import { ThemeToggle } from "@/components/theme-toggle"
 
-  const [showButton, setShowButton] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setShowButton(window.scrollY > 200);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+const [showButton, setShowButton] = useState(false);
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+useEffect(() => {
+  const handleScroll = () => {
+    setShowButton(window.scrollY > 200);
   };
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
+
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
 
   export default function HomePage() {
   return (
