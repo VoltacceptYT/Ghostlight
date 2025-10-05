@@ -115,6 +115,51 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
+/* Abyssal Harbinger Themes */
+.abyssal-dark {
+  --background: #2a0000;
+  --foreground: #fff0f0;
+  --card: #3a0000;
+  --card-foreground: #fff0f0;
+  --popover: #2a0000;
+  --popover-foreground: #fff0f0;
+  --primary: #ff2222;
+  --primary-foreground: #fff0f0;
+  --secondary: #7a0000;
+  --secondary-foreground: #fff0f0;
+  --muted: #4a0000;
+  --muted-foreground: #ffcccc;
+  --accent: #ff2222;
+  --accent-foreground: #fff0f0;
+  --destructive: #ff0000;
+  --destructive-foreground: #fff0f0;
+  --border: #ff2222;
+  --input: #7a0000;
+  --ring: #ff2222;
+}
+
+.abyssal-light {
+  --background: #fff0f0;
+  --foreground: #2a0000;
+  --card: #fff0f0;
+  --card-foreground: #2a0000;
+  --popover: #fff0f0;
+  --popover-foreground: #2a0000;
+  --primary: #ff2222;
+  --primary-foreground: #fff0f0;
+  --secondary: #ffcccc;
+  --secondary-foreground: #2a0000;
+  --muted: #ffcccc;
+  --muted-foreground: #2a0000;
+  --accent: #ff2222;
+  --accent-foreground: #fff0f0;
+  --destructive: #ff0000;
+  --destructive-foreground: #fff0f0;
+  --border: #ff2222;
+  --input: #ffcccc;
+  --ring: #ff2222;
+}
+
 ::-webkit-scrollbar {
   width: 12px;
   background: var(--background);

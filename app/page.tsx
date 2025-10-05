@@ -3,6 +3,7 @@ import { SearchBar } from "@/components/search-bar"
 import { GhostShellGrid } from "@/components/ghost-shell-grid"
 import { Suspense } from "react"
 import { ThemeToggle } from "@/components/theme-toggle"
+import { ThemeSelector } from "@/components/theme-selector"
 import { ReturnToTopButton } from "@/components/return-to-top-button"
 
 export default function HomePage() {
@@ -17,7 +18,8 @@ export default function HomePage() {
           </div>
           <div className="flex items-center gap-2">
             <p className="text-sm text-muted-foreground hidden sm:block">LoyalLight</p>
-            <ThemeToggle />
+            {/* Custom Theme Selector */}
+            <ThemeSelector />
           </div>
         </div>
       </header>
