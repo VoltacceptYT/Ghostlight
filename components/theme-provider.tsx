@@ -10,6 +10,12 @@ export function ThemeProvider({ children, ...props }: ThemeProviderProps & { chi
   return (
     <NextThemesProvider
       attribute="class"
+      value={{
+        light: "light",
+        dark: "dark",
+        "discord-dark": "discord-dark",
+        "discord-light": "discord-light",
+      }}
       defaultTheme="system"
       enableSystem
       disableTransitionOnChange

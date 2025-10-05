@@ -39,6 +39,7 @@
   --sidebar-ring: oklch(0.708 0 0);
 }
 
+/* Default Dark Theme */
 .dark {
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
@@ -74,6 +75,7 @@
   --sidebar-ring: oklch(0.439 0 0);
 }
 
+/* Default Light Theme */
 .light {
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -108,6 +110,70 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+}
+
+/* Discord Dark Theme */
+.discord-dark {
+  --background: #313338;
+  --foreground: #f2f3f5;
+  --card: #2b2d31;
+  --card-foreground: #f2f3f5;
+  --popover: #232428;
+  --popover-foreground: #f2f3f5;
+  --primary: #5865f2;
+  --primary-foreground: #ffffff;
+  --secondary: #23272a;
+  --secondary-foreground: #f2f3f5;
+  --muted: #383a40;
+  --muted-foreground: #b5bac1;
+  --accent: #5865f2;
+  --accent-foreground: #ffffff;
+  --destructive: #ed4245;
+  --destructive-foreground: #ffffff;
+  --border: #23272a;
+  --input: #383a40;
+  --ring: #5865f2;
+  --radius: 0.625rem;
+  --sidebar: #23272a;
+  --sidebar-foreground: #f2f3f5;
+  --sidebar-primary: #5865f2;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #5865f2;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #23272a;
+  --sidebar-ring: #5865f2;
+}
+
+/* Discord Light Theme */
+.discord-light {
+  --background: #f2f3f5;
+  --foreground: #23272a;
+  --card: #ffffff;
+  --card-foreground: #23272a;
+  --popover: #e3e5e8;
+  --popover-foreground: #23272a;
+  --primary: #7289da;
+  --primary-foreground: #ffffff;
+  --secondary: #e3e5e8;
+  --secondary-foreground: #23272a;
+  --muted: #dbdee1;
+  --muted-foreground: #4e5058;
+  --accent: #7289da;
+  --accent-foreground: #ffffff;
+  --destructive: #ed4245;
+  --destructive-foreground: #ffffff;
+  --border: #dbdee1;
+  --input: #e3e5e8;
+  --ring: #7289da;
+  --radius: 0.625rem;
+  --sidebar: #e3e5e8;
+  --sidebar-foreground: #23272a;
+  --sidebar-primary: #7289da;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #7289da;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #dbdee1;
+  --sidebar-ring: #7289da;
 }
 
 @theme inline {

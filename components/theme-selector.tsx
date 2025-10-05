@@ -9,7 +9,8 @@ import { useState, useEffect } from "react";
 const themes = [
   { key: "light", label: "Default Light", icon: <Sun className="size-4" /> },
   { key: "dark", label: "Default Dark", icon: <Moon className="size-4" /> },
-//  { key: "abyssal", label: "Abyssal Harbinger", icon: <Palette className="size-4 text-red-700" /> },
+  { key: "discord-dark", label: "Discord Dark", icon: <Palette className="size-4 text-[#5865F2]" /> },
+  { key: "discord-light", label: "Discord Light", icon: <Palette className="size-4 text-[#7289DA]" /> },
 ];
 
 export function ThemeSelector() {
