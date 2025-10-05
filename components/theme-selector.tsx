@@ -9,7 +9,7 @@ import { useState, useEffect } from "react";
 const themes = [
   { key: "light", label: "Default Light", icon: <Sun className="size-4" /> },
   { key: "dark", label: "Default Dark", icon: <Moon className="size-4" /> },
-  { key: "abyssal", label: "Abyssal Harbinger", icon: <Palette className="size-4 text-red-700" /> },
+//  { key: "abyssal", label: "Abyssal Harbinger", icon: <Palette className="size-4 text-red-700" /> },
 ];
 
 export function ThemeSelector() {
