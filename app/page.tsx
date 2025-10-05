@@ -13,9 +13,7 @@ export default function HomePage() {
       <header className="border-b border-border/50 sticky top-0 bg-background/80 backdrop-blur-sm z-10">
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="logo-discord-overlay h-8 w-8 sm:h-10 sm:w-10 flex items-center justify-center">
               <Image src="/favicon.ico" alt="Logo" width={32} height={32} className="h-8 w-8 sm:h-10 sm:w-10 logo-theme-invert" />
-            </div>
             <span className="text-lg font-semibold tracking-tight">VoltaTECH</span>
           </div>
           <div className="flex items-center gap-2">

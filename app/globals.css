@@ -244,32 +244,6 @@
   filter: invert(0);
 }
 
-.discord-dark .logo-discord-overlay::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(88, 101, 242, 0.6); /* Discord dark blue */
-  border-radius: 8px;
-  pointer-events: none;
-  z-index: 1;
-}
-.discord-light .logo-discord-overlay::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(114, 137, 218, 0.5); /* Discord light blue */
-  border-radius: 8px;
-  pointer-events: none;
-  z-index: 1;
-}
-.logo-discord-overlay {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
 @layer base {
   * {
     @apply border-border outline-ring/50;
